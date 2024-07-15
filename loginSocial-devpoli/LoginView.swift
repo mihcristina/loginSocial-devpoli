@@ -57,6 +57,40 @@ class LoginView: UIView {
         return button
     }()
 
+    lazy var loginButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Entrar", for: .normal)
+        button.backgroundColor = .accent
+        button.layer.cornerRadius = 8
+        button.clipsToBounds = true
+        button.setTitleColor(.white, for: .normal)
+        return button
+    }()
+    
+    lazy var dividerLeft: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .thinGrey
+        return view
+    }()
+    
+    lazy var comeLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Entre com"
+        label.font = UIFont(name: "Roboto-Regular", size: 16)
+        label.textColor = .displayGrey
+        return label
+    }()
+    
+    lazy var dividerRight: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .thinGrey
+        return view
+    }()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -75,6 +109,10 @@ extension LoginView: ViewCodable {
         addSubview(emailTextField)
         addSubview(passwordTextField)
         addSubview(forgotPasswordButton)
+        addSubview(loginButton)
+        addSubview(dividerLeft)
+        addSubview(comeLabel)
+        addSubview(dividerRight)
     }
     
     func setupConstraint() {
@@ -99,8 +137,24 @@ extension LoginView: ViewCodable {
             
             forgotPasswordButton.topAnchor.constraint(equalTo: self.passwordTextField.bottomAnchor, constant: 22),
             forgotPasswordButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -22),
-            
 
+            loginButton.topAnchor.constraint(equalTo: self.forgotPasswordButton.bottomAnchor, constant: 22),
+            loginButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 48),
+            loginButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -48),
+            loginButton.heightAnchor.constraint(equalToConstant: 50),
+            
+            dividerLeft.topAnchor.constraint(equalTo: self.loginButton.bottomAnchor, constant: 68),
+            dividerLeft.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 22),
+            dividerLeft.heightAnchor.constraint(equalToConstant: 1),
+            dividerLeft.widthAnchor.constraint(equalToConstant: 115),
+            
+            comeLabel.topAnchor.constraint(equalTo: self.loginButton.bottomAnchor, constant: 59),
+            comeLabel.leadingAnchor.constraint(equalTo: self.dividerLeft.trailingAnchor, constant: 23),
+
+            dividerRight.topAnchor.constraint(equalTo: self.loginButton.bottomAnchor, constant: 68),
+            dividerRight.leadingAnchor.constraint(equalTo: self.comeLabel.trailingAnchor, constant: 23),
+            dividerRight.heightAnchor.constraint(equalToConstant: 1),
+            dividerRight.widthAnchor.constraint(equalToConstant: 114),
         ])
     }
     
