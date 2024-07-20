@@ -26,4 +26,6 @@ extension UIColor {
     static let lightGray = UIColor(red: 242/255, green: 242/255, blue: 242/255, alpha: 1.0)
     
     static let backgroundGray = UIColor(red: 252/255, green: 252/255, blue: 252/255, alpha: 1.0)
+    
+    static let descriptionGray = UIColor(red: 156/255, green: 156/255, blue: 156/255, alpha: 1.0)
 }

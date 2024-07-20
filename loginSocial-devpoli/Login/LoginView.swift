@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol LoginViewDelegate: AnyObject {
+    func tappedButtonCreateAccount()
+}
+
 class LoginView: UIView {
+
+    weak var delegate: LoginViewDelegate?
 
     lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -118,6 +124,7 @@ class LoginView: UIView {
     lazy var registerButton: RegisterButton = {
         let button = RegisterButton()
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.textButton.addTarget(self, action: #selector(self.tappedButton), for: .touchUpInside)
         return button
     }()
 
@@ -129,6 +136,11 @@ class LoginView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+    @objc func tappedButton() {
+        delegate?.tappedButtonCreateAccount()
+    }
+
 }
 
 extension LoginView: ViewCodable {
@@ -196,6 +208,7 @@ extension LoginView: ViewCodable {
 
             registerButton.topAnchor.constraint(equalTo: self.stackButtons.bottomAnchor, constant: 76),
             registerButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            registerButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -54),
         ])
     }
     

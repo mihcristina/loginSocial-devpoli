@@ -55,7 +55,8 @@ extension RegisterButton: ViewCodable {
     
     func setupConstraint() {
         NSLayoutConstraint.activate([
-            stackButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            stackButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 106),
+            stackButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -107),
             stackButton.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             
             textLabel.heightAnchor.constraint(equalToConstant: 18),
