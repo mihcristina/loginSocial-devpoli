@@ -114,6 +114,12 @@ class LoginView: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
+    
+    lazy var registerButton: RegisterButton = {
+        let button = RegisterButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -140,6 +146,7 @@ extension LoginView: ViewCodable {
         addSubview(stackButtons)
         stackButtons.addArrangedSubview(facebookButton)
         stackButtons.addArrangedSubview(appleButton)
+        addSubview(registerButton)
     }
     
     func setupConstraint() {
@@ -186,6 +193,9 @@ extension LoginView: ViewCodable {
             stackButtons.topAnchor.constraint(equalTo: self.dividerLeft.bottomAnchor, constant: 18),
             stackButtons.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 22),
             stackButtons.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -22),
+
+            registerButton.topAnchor.constraint(equalTo: self.stackButtons.bottomAnchor, constant: 76),
+            registerButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
         ])
     }
     

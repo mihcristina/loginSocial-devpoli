@@ -13,7 +13,7 @@ extension UIColor {
 
     static let secondary = UIColor(red: 100/255, green: 181/255, blue: 246/255, alpha: 1.0)
 
-    static let tertiary = UIColor(red: 255/255, green: 167/255, blue: 38/255, alpha: 1.0)
+    static let tertiary = UIColor(red: 33/255, green: 150/255, blue: 243/255, alpha: 1.0)
     
     static let accent = UIColor(red: 255/255, green: 167/255, blue: 38/255, alpha: 1.0)
 
