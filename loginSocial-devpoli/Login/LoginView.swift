@@ -60,7 +60,7 @@ class LoginView: UIView {
     lazy var loginButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Entrar", for: .normal)
+        button.setTitle("ENTRAR", for: .normal)
         button.backgroundColor = .accent
         button.layer.cornerRadius = 8
         button.clipsToBounds = true
