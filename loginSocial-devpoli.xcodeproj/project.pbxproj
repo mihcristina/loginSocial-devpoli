@@ -13,6 +13,7 @@
 		8305A8C02C4B6E24008515C6 /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A8BF2C4B6E24008515C6 /* CreateAccount.swift */; };
 		8305A8C22C4B6E32008515C6 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A8C12C4B6E32008515C6 /* CreateAccountViewController.swift */; };
 		8305A8C42C4B6E45008515C6 /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A8C32C4B6E45008515C6 /* CreateAccountViewModel.swift */; };
+		8305A8C62C4B82CC008515C6 /* UINavigation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A8C52C4B82CC008515C6 /* UINavigation+Extension.swift */; };
 		8333DD752C448FFC00691C35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8333DD742C448FFC00691C35 /* AppDelegate.swift */; };
 		8333DD772C448FFC00691C35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8333DD762C448FFC00691C35 /* SceneDelegate.swift */; };
 		8333DD792C448FFC00691C35 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8333DD782C448FFC00691C35 /* LoginViewController.swift */; };
@@ -34,6 +35,7 @@
 		8305A8BF2C4B6E24008515C6 /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
 		8305A8C12C4B6E32008515C6 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		8305A8C32C4B6E45008515C6 /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		8305A8C52C4B82CC008515C6 /* UINavigation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigation+Extension.swift"; sourceTree = "<group>"; };
 		8333DD712C448FFC00691C35 /* loginSocial-devpoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "loginSocial-devpoli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8333DD742C448FFC00691C35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8333DD762C448FFC00691C35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			children = (
 				8333DD8E2C4493D700691C35 /* UIFont+Extension.swift */,
 				83BA88582C44D5E200902D41 /* UIColor+Extension.swift */,
+				8305A8C52C4B82CC008515C6 /* UINavigation+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				8333DD752C448FFC00691C35 /* AppDelegate.swift in Sources */,
 				8305A8BD2C4B6648008515C6 /* RegisterButton.swift in Sources */,
 				8333DD892C4491BD00691C35 /* LoginView.swift in Sources */,
+				8305A8C62C4B82CC008515C6 /* UINavigation+Extension.swift in Sources */,
 				8305A8B62C48A360008515C6 /* LoginViewModel.swift in Sources */,
 				8333DD8F2C4493D700691C35 /* UIFont+Extension.swift in Sources */,
 				8333DD772C448FFC00691C35 /* SceneDelegate.swift in Sources */,
