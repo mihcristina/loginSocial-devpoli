@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8305A8B62C48A360008515C6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A8B52C48A360008515C6 /* LoginViewModel.swift */; };
 		8305A8BA2C48AEA6008515C6 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A8B92C48AEA6008515C6 /* LoginButton.swift */; };
+		8305A8BD2C4B6648008515C6 /* RegisterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A8BC2C4B6648008515C6 /* RegisterButton.swift */; };
 		8333DD752C448FFC00691C35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8333DD742C448FFC00691C35 /* AppDelegate.swift */; };
 		8333DD772C448FFC00691C35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8333DD762C448FFC00691C35 /* SceneDelegate.swift */; };
 		8333DD792C448FFC00691C35 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8333DD782C448FFC00691C35 /* LoginViewController.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		8305A8B52C48A360008515C6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8305A8B92C48AEA6008515C6 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		8305A8BC2C4B6648008515C6 /* RegisterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButton.swift; sourceTree = "<group>"; };
 		8333DD712C448FFC00691C35 /* loginSocial-devpoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "loginSocial-devpoli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8333DD742C448FFC00691C35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8333DD762C448FFC00691C35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		8305A8B72C48AE72008515C6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				8305A8BB2C4B6628008515C6 /* RegisterButton */,
 				8305A8B82C48AE7A008515C6 /* LoginButton */,
 			);
 			path = Components;
@@ -76,6 +79,14 @@
 				8305A8B92C48AEA6008515C6 /* LoginButton.swift */,
 			);
 			path = LoginButton;
+			sourceTree = "<group>";
+		};
+		8305A8BB2C4B6628008515C6 /* RegisterButton */ = {
+			isa = PBXGroup;
+			children = (
+				8305A8BC2C4B6648008515C6 /* RegisterButton.swift */,
+			);
+			path = RegisterButton;
 			sourceTree = "<group>";
 		};
 		8333DD682C448FFC00691C35 = {
@@ -214,6 +225,7 @@
 				8305A8BA2C48AEA6008515C6 /* LoginButton.swift in Sources */,
 				8333DD792C448FFC00691C35 /* LoginViewController.swift in Sources */,
 				8333DD752C448FFC00691C35 /* AppDelegate.swift in Sources */,
+				8305A8BD2C4B6648008515C6 /* RegisterButton.swift in Sources */,
 				8333DD892C4491BD00691C35 /* LoginView.swift in Sources */,
 				8305A8B62C48A360008515C6 /* LoginViewModel.swift in Sources */,
 				8333DD8F2C4493D700691C35 /* UIFont+Extension.swift in Sources */,

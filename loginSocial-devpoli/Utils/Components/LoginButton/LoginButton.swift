@@ -16,6 +16,9 @@ class LoginButton: UIControl {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .white
+        view.layer.borderColor = UIColor.lightGray.cgColor
+        view.layer.borderWidth = 1
+        view.layer.cornerRadius = 8
         return view
     }()
 
@@ -70,7 +73,7 @@ extension LoginButton: ViewCodable {
             
             nameLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             nameLabel.leadingAnchor.constraint(equalTo: self.logoImageView.trailingAnchor, constant: 8),
-            nameLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -59),
+            nameLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             
         ])
     }

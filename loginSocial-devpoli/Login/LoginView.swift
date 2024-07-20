@@ -33,6 +33,8 @@ class LoginView: UIView {
        let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.borderStyle = .roundedRect
+        textField.backgroundColor = .backgroundGray
+        textField.layer.borderColor = UIColor.lightGray.cgColor
         textField.layer.borderWidth = 1
         textField.layer.cornerRadius = 8
         textField.placeholder = "E-mail"
@@ -43,6 +45,8 @@ class LoginView: UIView {
        let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.borderStyle = .roundedRect
+        textField.backgroundColor = .backgroundGray
+        textField.layer.borderColor = UIColor.lightGray.cgColor
         textField.layer.borderWidth = 1
         textField.layer.cornerRadius = 8
         textField.placeholder = "Senha"
@@ -90,6 +94,26 @@ class LoginView: UIView {
         view.backgroundColor = .thinGrey
         return view
     }()
+    
+    lazy var stackButtons: UIStackView = {
+        var stack = UIStackView()
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.axis = .horizontal
+        stack.distribution = .fillEqually
+        stack.spacing = 10
+        return stack
+    }()
+    lazy var facebookButton: LoginButton = {
+        let button = LoginButton(image: UIImage(named: "facebook") ?? UIImage(), name: "Facebook")
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    lazy var appleButton: LoginButton = {
+        let button = LoginButton(image: UIImage(named: "apple") ?? UIImage(), name: "Apple")
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -113,6 +137,9 @@ extension LoginView: ViewCodable {
         addSubview(dividerLeft)
         addSubview(comeLabel)
         addSubview(dividerRight)
+        addSubview(stackButtons)
+        stackButtons.addArrangedSubview(facebookButton)
+        stackButtons.addArrangedSubview(appleButton)
     }
     
     func setupConstraint() {
@@ -155,6 +182,10 @@ extension LoginView: ViewCodable {
             dividerRight.leadingAnchor.constraint(equalTo: self.comeLabel.trailingAnchor, constant: 23),
             dividerRight.heightAnchor.constraint(equalToConstant: 1),
             dividerRight.widthAnchor.constraint(equalToConstant: 114),
+
+            stackButtons.topAnchor.constraint(equalTo: self.dividerLeft.bottomAnchor, constant: 18),
+            stackButtons.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 22),
+            stackButtons.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -22),
         ])
     }
     
