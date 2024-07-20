@@ -10,6 +10,9 @@
 		8305A8B62C48A360008515C6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A8B52C48A360008515C6 /* LoginViewModel.swift */; };
 		8305A8BA2C48AEA6008515C6 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A8B92C48AEA6008515C6 /* LoginButton.swift */; };
 		8305A8BD2C4B6648008515C6 /* RegisterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A8BC2C4B6648008515C6 /* RegisterButton.swift */; };
+		8305A8C02C4B6E24008515C6 /* RegisterAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A8BF2C4B6E24008515C6 /* RegisterAccount.swift */; };
+		8305A8C22C4B6E32008515C6 /* RegisterAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A8C12C4B6E32008515C6 /* RegisterAccountViewController.swift */; };
+		8305A8C42C4B6E45008515C6 /* RegisterAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305A8C32C4B6E45008515C6 /* RegisterAccountViewModel.swift */; };
 		8333DD752C448FFC00691C35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8333DD742C448FFC00691C35 /* AppDelegate.swift */; };
 		8333DD772C448FFC00691C35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8333DD762C448FFC00691C35 /* SceneDelegate.swift */; };
 		8333DD792C448FFC00691C35 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8333DD782C448FFC00691C35 /* LoginViewController.swift */; };
@@ -28,6 +31,9 @@
 		8305A8B52C48A360008515C6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8305A8B92C48AEA6008515C6 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		8305A8BC2C4B6648008515C6 /* RegisterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButton.swift; sourceTree = "<group>"; };
+		8305A8BF2C4B6E24008515C6 /* RegisterAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAccount.swift; sourceTree = "<group>"; };
+		8305A8C12C4B6E32008515C6 /* RegisterAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAccountViewController.swift; sourceTree = "<group>"; };
+		8305A8C32C4B6E45008515C6 /* RegisterAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAccountViewModel.swift; sourceTree = "<group>"; };
 		8333DD712C448FFC00691C35 /* loginSocial-devpoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "loginSocial-devpoli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8333DD742C448FFC00691C35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8333DD762C448FFC00691C35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +95,16 @@
 			path = RegisterButton;
 			sourceTree = "<group>";
 		};
+		8305A8BE2C4B6DB9008515C6 /* RegisterAccount */ = {
+			isa = PBXGroup;
+			children = (
+				8305A8BF2C4B6E24008515C6 /* RegisterAccount.swift */,
+				8305A8C12C4B6E32008515C6 /* RegisterAccountViewController.swift */,
+				8305A8C32C4B6E45008515C6 /* RegisterAccountViewModel.swift */,
+			);
+			path = RegisterAccount;
+			sourceTree = "<group>";
+		};
 		8333DD682C448FFC00691C35 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +124,7 @@
 		8333DD732C448FFC00691C35 /* loginSocial-devpoli */ = {
 			isa = PBXGroup;
 			children = (
+				8305A8BE2C4B6DB9008515C6 /* RegisterAccount */,
 				8305A8B42C48A347008515C6 /* Login */,
 				8333DD8A2C44932500691C35 /* Utils */,
 				8333DD742C448FFC00691C35 /* AppDelegate.swift */,
@@ -223,6 +240,7 @@
 			files = (
 				83BA88592C44D5E200902D41 /* UIColor+Extension.swift in Sources */,
 				8305A8BA2C48AEA6008515C6 /* LoginButton.swift in Sources */,
+				8305A8C02C4B6E24008515C6 /* RegisterAccount.swift in Sources */,
 				8333DD792C448FFC00691C35 /* LoginViewController.swift in Sources */,
 				8333DD752C448FFC00691C35 /* AppDelegate.swift in Sources */,
 				8305A8BD2C4B6648008515C6 /* RegisterButton.swift in Sources */,
@@ -231,6 +249,8 @@
 				8333DD8F2C4493D700691C35 /* UIFont+Extension.swift in Sources */,
 				8333DD772C448FFC00691C35 /* SceneDelegate.swift in Sources */,
 				83BA88502C449A3A00902D41 /* ViewCodable.swift in Sources */,
+				8305A8C22C4B6E32008515C6 /* RegisterAccountViewController.swift in Sources */,
+				8305A8C42C4B6E45008515C6 /* RegisterAccountViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
